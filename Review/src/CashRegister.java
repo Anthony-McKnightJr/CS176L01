@@ -14,5 +14,17 @@ public class CashRegister {
 		payment = 0 ;
 	}
 	
+	public void recordPurchase(double amount) {
+		purchase = amount;
+	}
+	
+	public void recievePayment(double amount) {
+		payment = amount;
+	}
+	
+	public double getChange(double change) {
+		change = payment - purchase;
+		return change;
+	}
 	
 }
